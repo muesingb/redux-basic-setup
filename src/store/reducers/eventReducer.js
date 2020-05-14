@@ -1,8 +1,7 @@
-import {  } from '../actions/firstActions'
+import {  } from '../actions/events/events'
 
 const initialState = {
-    firstState: "",
-    firstNumberState: null
+   
 }
 
 const reducer = (state = initialState, action) => {
