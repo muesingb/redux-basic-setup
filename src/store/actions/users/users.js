@@ -1,6 +1,6 @@
 import { UPDATE_USER, FETCH_USERS } from './usersActionTypes'
 
-//synch action
+//synchronous action
 export const updateUser = (user_id) => {
     return {
         type: UPDATE_USER,
@@ -8,7 +8,7 @@ export const updateUser = (user_id) => {
     }
 };
 
-//async action
+//asynchronous action
 export const fetchUsers = () => {
     return (dispatch) => {
         fetch(`${URL}/users`)

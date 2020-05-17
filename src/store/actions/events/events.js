@@ -1,6 +1,6 @@
 import { FETCH_EVENTS, UPDATE_EVENT } from './eventsActionTypes'
 
-//synch action
+//synchronous action
 export const updateEvent = (event_id) => {
     return {
         type: UPDATE_EVENT,
@@ -8,7 +8,7 @@ export const updateEvent = (event_id) => {
     }
 };
 
-//async action
+//asynchronous action
 export const fetchEvents = () => {
     return (dispatch) => {
         fetch(`${URL}/events`)
