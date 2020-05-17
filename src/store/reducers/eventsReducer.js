@@ -1,21 +1,22 @@
-import {  } from '../actions/events/events'
+import { FETCH_EVENTS, UPDATE_EVENT } from '../actions/events/eventsActionTypes'
 
 const initialState = {
-   
+    allEvents: [],
+    currentEvent: null
 }
 
-const reducer = (state = initialState, action) => {
+const eventsReducer = (state = initialState, action) => {
     switch (action.type) {
-        case FETCH_USERS:
+        case FETCH_EVENTS:
             return {
                 ...state,
-                allUsers: action.payload
+                allEvents: action.payload
             };
             break
-        case UPDATE_USER:
+        case UPDATE_EVENT:
             return {
                 ...state,
-                currentUser: action.payload
+                currentEvent: action.payload
             };
             break
         default:
@@ -23,4 +24,4 @@ const reducer = (state = initialState, action) => {
     }
 };
 
-export default reducer
+export default eventsReducer

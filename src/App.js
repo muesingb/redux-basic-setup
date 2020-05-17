@@ -23,4 +23,18 @@ function App() {
   );
 }
 
+/*functional component*/
+import configureStore from './src/store/configureStore';
+import { Provider } from 'react-redux';
+
+const App = () => {
+
+  return (
+    <Provider store={configureStore} >
+      <Navigator />
+      {/* <TabNavigator /> */}
+    </Provider>
+  );
+};
+
 export default App;
