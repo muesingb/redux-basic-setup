@@ -2,7 +2,7 @@ import { FETCH_EVENTS, UPDATE_EVENT } from '../actions/events/eventsActionTypes'
 
 const initialState = {
     allEvents: [],
-    currentEvent: null
+    currentEvent: "Birthday Party"
 }
 
 const eventsReducer = (state = initialState, action) => {
