@@ -4,7 +4,7 @@ import { useSelector, useDispatch  } from 'react-redux';
 import { updateEvent } from '../store/actions/events/events'
 
 const EventFunctionalComponent = (props) => { 
-    const state = useSelector(state => state)
+    const state = useSelector(state => state.events)
     const dispatch = useDispatch()
 
     const changeEvent = (newEvent) => {
@@ -14,7 +14,7 @@ const EventFunctionalComponent = (props) => {
     return (
         <div>
             <h1>Hello world Functional Component</h1>
-            <h2>{state.events.currentEvent}</h2>
+            <h2>{state.currentEvent}</h2>
             <button onClick={() => changeEvent("Housewarming")} >Change current event to a HouseWarming!</button>
         </div>
     )
