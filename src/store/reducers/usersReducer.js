@@ -2,7 +2,7 @@ import { FETCH_USERS, UPDATE_USER } from '../actions/users/usersActionTypes'
 
 const initialState = {
    allUsers: [],
-   currentUser: null
+   currentUser: "Barbara"
 }
 
 const usersReducer = (state = initialState, action) => {
